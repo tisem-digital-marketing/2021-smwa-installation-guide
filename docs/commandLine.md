@@ -1,12 +1,40 @@
-# Command Line Tools
+# Bash Shell
 
-A command-line interface or command language interpreter (CLI), also known as a terminal, is a means of interacting with a computer program where the user issues commands to the program in the form of successive lines of text.
+A command-line interface or shell, also known as a terminal, is a means of interacting with a computer program where the user issues commands to the program in the form of successive lines of text.
 
-Throughout the course we will emphasize use of the terminal and executing commands within it as our modus operandi.
+We will want to use the `Bash` shell for this course to interact with our file system and use Git.
+
+## Windows Users
+
+Windows doesn't have a Bash shell by default, so we are going to install one.
+Follow these steps:
+
+1. Download the Git for Windows [installer](https://gitforwindows.org/).
+2. Run the installer and follow the steps below:
+    * Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
+    * From the dropdown menu select "Use the Nano editor by default" (NOTE: you will need to scroll up to find it) and click on "Next".
+    * On the page that says "Adjusting the name of the initial branch in new repositories", ensure that "Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.
+    * Ensure that "Git from the command line and also from 3rd-party software" is selected and click on "Next". (If you don't do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the "Git from the command line and also from 3rd-party software" option.)
+    * Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".
+    * Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
+    * Ensure that "Use Windows' default console window" is selected and click on "Next".
+    * Ensure that "Default (fast-forward or merge) is selected and click "Next"
+    * Ensure that "Git Credential Manager Core" is selected and click on "Next".
+    * Ensure that "Enable file system caching" is selected and click on "Next".
+    * Click on "Install".
+    * Click on "Finish" or "Next".
+3. If your "HOME" environment variable is not set (or you don't know what this is):
+    * Open command prompt (Open Start Menu then type cmd and press Enter)
+    * Type the following line into the command prompt window exactly as shown:
+      `setx HOME "%USERPROFILE%"`
+    * Press Enter, you should see SUCCESS: Specified value was saved.
+    * Quit command prompt by typing exit then pressing Enter
+
+This will provide you with both a Bash shell *and Git*.
 
 ## Mac Users
 
-A command line interface comes already installed with OSX.
+A Bash shell comes already installed with MacOS.
 
 You will need to install some other software from the terminal throughout the course, so it will be useful to install some additional "command line tools" now.
 
@@ -60,7 +88,7 @@ brew upgrade
 
 ### Installing Packages with Homebrew
 
-Now we can use homebrew to easily install software.  We need some basic system tools for some of the programs we will install later.
+Now we can use homebrew to easily install software.  We need some basic system tools for some of the R packages we will install later.
 
 In particular we need:
 
@@ -82,7 +110,7 @@ If you get a message that the package you are trying to reinstall is not yet ins
 ### Linking Packages to a Terminal Session
 
 We need to ensure that our terminal session has access to what we installed.
-To do this we add some extra lines to our bash profile (we will discuss what this means in class - do what we say for now):
+To do this, copy and paste the following into your bash shell:
 
 ``` bash
 echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"' >> ~/.bash_profile
@@ -90,7 +118,7 @@ echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
 source .bash_profile
 ```
 
-## Linux & Windows Users
+## Linux Users
 
 * Linux Users: Open a terminal session with `Ctrl` + `Alt` + `T`.
 * Windows Users: Open the Ubuntu Terminal as we described [here](/windows-wsl/#installing-windows-terminal)
@@ -107,30 +135,6 @@ After the installation succeeded successfully repeat this one-by-one with the fo
 ```bash
 sudo apt-get install libxml2-dev
 sudo apt-get install libssl-dev
-sudo apt-get install gdebi-core
+# below needed to install R
+sudo apt install --no-install-recommends software-properties-common dirmngr 
 ```
-
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-!!! tip "Windows Users: Copy and Paste"
-    The 'traditional' `Ctrl + C` and `Ctrl + v` doesn't work with your terminal because as `Ctrl + Key` commands have a special meaning.
-    There are two alternatives:
-
-    * Use the 'Linux' copy and paste commands: copy is `Ctrl + Shift + C` and paste is `Ctrl + Shift + V`.
-    * To paste text, you just do a right-click.
-    To copy anything inside the terminal, you use highlight the text with your cursor.
-    It is automatically copied to your clipboard.
-<!-- markdownlint-restore -->
-
-<!-- markdownlint-capture -->
-<!-- markdownlint-disable -->
-!!! tip "Windows Users: Library Installation"
-    At some point in the install process you may see a screen like this one:
-    
-    <img src="../img/misc-windows/96-lib-installer.jpg" class="center" height = "500">
-
-    Here you need to make a choice, which you do by using the left and right arrows followed by `Return`.
-    Lachlan chose, 'No' - but you can safely choose yes without your computer burning down.
-
-    Whenever you get these kinds of screens, you can scroll up and down with the up and down buttons if needed and make decisions by selecting a choice as described above.
-<!-- markdownlint-restore -->
