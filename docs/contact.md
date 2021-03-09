@@ -4,25 +4,23 @@
 
 Please contact us via email:
 
-``` bash
-pp4rs.contact "AT" gmail.com
-```
+`tisem.social.media "AT" gmail.com`
 
-with the title "Installation Guide: Programming Practices for Research in Economics."
+with the title "Installation Guide: Social Media and Web Analytics."
 
-We look forward to hearing from you if you have questions about the installation guide, found this installation guide useful, or have further comments or suggestions to improve it.
+We look forward to hearing from you if you have questions about the installation guide, found this installation guide useful, or have further comments.
 
-## Programming Practices Team
+## Issues
 
-Programming Practices for Research in Economics was created by
+If you find errors, inaccuracies or think we need to further clarify our instructions [post an issue on GitHub][gh-issue].
 
-* Lachlan Deer
-* Adrian Etter
-* Julian Langer
-* Max Winkler
+## The Team
 
-at the Department of Economics, University of Zurich in 2016. This installation guide is for the 2020 edition, conducted by
+Social Media and Web Analytics was created by
 
-* Ulrich Bergmann
-* Lachlan Deer
-* Matteo Courthoud
+* Lachlan Deer (Twitter: [lachlandeer](https://twitter.com/lachlandeer?lang=en))
+* Henrik de With
+
+at the Department of Marketing, University of Tilburg in 2021. This installation guide is for the 2021 edition.
+
+[gh-issue]: https://github.com/tisem-digital-marketing/smwa-installation-guide-2021/issues
