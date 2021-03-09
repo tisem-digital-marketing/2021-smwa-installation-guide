@@ -1,13 +1,14 @@
 # Acknowledgements
 
-This edition of Programming Practices is based on the previous versions of the course:
+This Installation Guide borrows heavily from:
 
-* [`2017 edition`](pp4rs.github.io/2017-uzh), by Lachlan Deer, Adrian Etter, Julian Langer & Max Winkler
-* [`2018 edition`](pp4rs.github.io/2018-uzh), by Ulrich Bergmann, Ursina Schaede, Dora Simon, Carlo Zanella & Christian Zuend
-* [`2019 Foundations edition`](pp4rs.github.io/2019-foundations-uzh), by Lachlan Deer & Julian Langer
+* [Programming Practices for Research in Economics: Installation Guide][pp4rs-2020] by Ulrich Bergmann, Matteo Courthoud and Lachlan Deer
 
-It is designed after and borrows a lot from:
+and uses video guides provided by [Software Carpentry][swc]:
 
-* [`Effective Programming Practices for Economists`](https://wiwi.uni-bonn.de/gaudecker/prog_econ_slides.html#prog-econ-slides), a course by [Hans-Martin von Gaudecker](http://wiwi.uni-bonn.de/gaudecker/index.html)
-* Software Carpentry's [`Managing Software Research Projects`](https://swcarpentry.github.io/managing-research-software-projects/) lesson
-* [`Data Science for Economists`](https://github.com/uo-ec607), a course by [Grant McDermott](http://grantmcdermott.com/)
+* Greg Wilson (ed), "Software Carpentry: Workshop Template", Version
+2016.06, June 2016, https://github.com/carpentries/workshop-template,
+10.5281/zenodo.58156.
+
+[pp4rs-2020]: https://pp4rs.github.io/2020-uzh-installation-guide/
+[swc]: http://software-carpentry.org/

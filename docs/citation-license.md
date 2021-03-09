@@ -1,7 +1,8 @@
 # License
 
-Material is licensed under a CC-BY-NC-SA license. Further information is available at our [`course homepage`](pp4rs.github.io/2020-uzh)
+Material is licensed under a CC-BY-NC license. Further information is available at our [`course homepage`](tilburg-digital-marketing.github.io/2021-smwa)
 
 ## Suggested Citation
 
-* Ulrich Bergmann Matteo Courthoud and Lachlan Deer, 2020, `Installation Guide`, Programming Practices for Research in Economics, University of Zurich
+Lachlan Deer and Henrik de With, 2021, Social Media and Web Analytics: Installation Guide, University of Tilburg.
+https://github.com/tisem-digital-marketing/smwa-installation-guide-2021
