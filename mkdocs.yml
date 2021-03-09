@@ -1,19 +1,11 @@
-site_name: Programming Practices for Research in Econonomics
+site_name: Social Media and Web Analytics Installation Guide
 pages:
 - Welcome: index.md
-- Windows Subsystem: windows-wsl.md
-#- Terminology: terminology.md
 - Command Line Tools: commandLine.md
-- Text Editor: textEditor.md
 - Git: gitInstall.md
-- Python: python.md
-- Python Extras: python-more.md
-- Webscraping: webscraping_drivers.md
-- Automation with Snakemake: snakemake.md
 - R: r.md
 - RStudio: rstudio.md
 - R Packages: r-packages.md
-- LaTeX & Pandoc: pandoc.md
 - The Finish Line!: finish-line.md
 - Contact Us: contact.md
 - Citation & License: citation-license.md
