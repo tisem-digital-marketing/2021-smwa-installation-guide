@@ -8,7 +8,7 @@
 * Module Maintainer: Lachlan Deer (`@lachlandeer`)
 * Course: [Social Media and Web Analytics](https://tisem-digital-marketing.github.io/2021-smwa)
 * Institute: Dept of Marketing, Tilburg University
-* Current Version: [Spring 2021 edition](https://pp4rs.github.io/2020-uzh-installation-guide)
+* Current Version: [Spring 2021 edition](https://tisem-digital-marketing.github.io/smwa-installation-guide-2021)
 
 ## Building the Site
 
