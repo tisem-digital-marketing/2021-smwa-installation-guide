@@ -30,7 +30,11 @@ Follow these steps:
     * Press Enter, you should see SUCCESS: Specified value was saved.
     * Quit command prompt by typing exit then pressing Enter
 
-This will provide you with both a Bash shell *and Git*.
+This will provide you with both a Bash (called GitBash) shell *and Git*.
+
+To verify you have installed GitBash, click the windows button, and type in 'GitBash'.
+You should see the software appear as a 'choice'.
+Click on it, and a bash terminal should open up.
 
 ## Mac Users
 
