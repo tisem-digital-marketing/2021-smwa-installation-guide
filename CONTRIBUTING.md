@@ -1,6 +1,6 @@
 # Contributing
 
-[Programming Practices for Research in Students](https://github.com/pp4rs) is an open source project,
+[Social Media and Web Analytics](https://tisem-digital-marketing.github.io/2021-smwa) is an open source project,
 and we welcome contributions of all kinds:
 new lessons,
 fixes to existing material,
