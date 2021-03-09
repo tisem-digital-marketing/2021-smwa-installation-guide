@@ -1,14 +1,14 @@
 <!-- markdownlint-disable MD033 -->
 <!-- see https://github.com/DavidAnson/markdownlint for code to enable or disable rules -->
 
-# Module:  Installation Guide for Programming Practices for Research Students
+# Module:  Installation Guide for Social Media and Web Analytics
 
 ## Meta-Information
 
 * Module Maintainer: Lachlan Deer (`@lachlandeer`)
-* Course: [Programming Practices for Research in Economics](https://pp4rs.github.io)
-* Institute: Dept of Economics, Uni Zurich
-* Current Version: [Winter 2020 edition](https://pp4rs.github.io/2020-uzh-installation-guide)
+* Course: [Social Media and Web Analytics](https://tisem-digital-marketing.github.io/2021-smwa)
+* Institute: Dept of Marketing, Tilburg University
+* Current Version: [Spring 2021 edition](https://pp4rs.github.io/2020-uzh-installation-guide)
 
 ## Building the Site
 
@@ -26,11 +26,7 @@ pip install mkdocs
 mkdocs serve
 ```
 
-* Post the site to github pages using:
-
-```{.bash, id:"j29ie3c7"}
-mkdocs gh-deploy
-```
+* Deployment to the web takes place via a GitHub action on every push to the master branch
 
 ## Want to Contribute
 
@@ -46,10 +42,10 @@ All materials are licensed under a Creative Commons CC-BY-NC-SA license. The lic
 The suggested citation for the course materials is:
 
 ``` bash
-Ulrich Bergmann, Matteo Courthoud and Lachlan Deer, 2020, Installation Guide, Programming Practices for Research in Economics, University of Zurich
+Lachlan Deer and Henrik de With, 2021, Social Media and Web Analytics: Installation Guide, University of Tilburg
 ```
 
-If you find the installation guide useful - please drop us a line and say so - pp4rs.contact@gmail.com
+If you find the installation guide useful - please drop us a line and say so - tisem.social.media@gmail.com
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />
 
