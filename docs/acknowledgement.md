@@ -4,7 +4,7 @@ This Installation Guide borrows heavily from:
 
 * [Programming Practices for Research in Economics: Installation Guide][pp4rs-2020] by Ulrich Bergmann, Matteo Courthoud and Lachlan Deer
 
-and uses video guides provided by [Software Carpentry][swc]:
+and uses installation instructions for GitBash from [Software Carpentry][swc]:
 
 * Greg Wilson (ed), "Software Carpentry: Workshop Template", Version
 2016.06, June 2016, https://github.com/carpentries/workshop-template,
