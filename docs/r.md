@@ -49,13 +49,13 @@ $ sudo apt-get update
 
 We can now install `R` as from the terminal by entering the following:
 
-```{bash}
+```bash
 $ sudo apt-get install r-base r-base-dev
 ```
 
 Install the multi-threaded OpenBlas library to get higher performance for linear algebra operations:
 
-```{bash}
+```bash
 $ sudo apt-get install libopenblas-base
 ```
 
