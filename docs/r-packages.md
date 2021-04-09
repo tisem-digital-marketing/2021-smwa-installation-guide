@@ -28,7 +28,9 @@ to_install <-c( "tidyverse",
                 "textrecipes",
                 "vip",
                 "assertr",
-                "haven"
+                "haven",
+                "rtweet",
+                "tidygraph"
                 )
 
 install.packages(to_install)
