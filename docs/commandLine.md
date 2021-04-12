@@ -57,7 +57,7 @@ To open a terminal session:
 We want to install 'X-code command line tools'. Copy and paste the following and press `Return`
 
 ``` bash
-xcode-select --install
+$ xcode-select --install
 ```
 
 If you get a message that the command line tools are already installed, you can continue to the next step.
@@ -69,13 +69,13 @@ Homebrew is a package manager for Mac.
 Install Homebrew by opening a terminal and pasting the following command:
 
 ``` bash
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 Verify that Homebrew installed correctly, enter the following into your terminal:
 
 ``` bash
-brew doctor
+$ brew doctor
 ```
 
 And you should see the following output:
@@ -87,7 +87,7 @@ Your system is ready to brew
 Before continuing, lets be sure everything in Homebrew is up to date by entering the following:
 
 ``` bash
-brew upgrade
+$ brew upgrade
 ```
 
 ### Installing Packages with Homebrew
@@ -104,7 +104,7 @@ Most of these are already installed, but we need updates of these packages.
 For each of these packages enter:
 
 ``` bash
-brew reinstall pkg-name
+$ brew reinstall pkg-name
 ```
 
 i.e. `brew reinstall libxml2`.
@@ -117,9 +117,9 @@ We need to ensure that our terminal session has access to what we installed.
 To do this, copy and paste the following into your bash shell:
 
 ``` bash
-echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"' >> ~/.bash_profile
-echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
-source .bash_profile
+$ echo 'export PATH="/usr/local/opt/libxml2/bin:$PATH"' >> ~/.bash_profile
+$ echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
+$ source .bash_profile
 ```
 
 ## Linux Users
@@ -130,15 +130,15 @@ source .bash_profile
 Copy the following command into terminal and press `Return`:
 
 ```bash
-sudo apt-get update
-sudo apt-get install libcurl4-gnutls-dev librtmp-dev
+$ sudo apt-get update
+$ sudo apt-get install libcurl4-gnutls-dev librtmp-dev
 ```
 
 After the installation succeeded successfully repeat this one-by-one with the following two other commands:
 
 ```bash
-sudo apt-get install libxml2-dev
-sudo apt-get install libssl-dev
+$ sudo apt-get install libxml2-dev
+$ sudo apt-get install libssl-dev
 # below needed to install R
-sudo apt install --no-install-recommends software-properties-common dirmngr 
+$ sudo apt install --no-install-recommends software-properties-common dirmngr 
 ```

@@ -16,13 +16,13 @@ There should be an Rstudio icon to click into.
 Download the Latest Version of RStudio:
 
 ``` bash
-wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1106-amd64.deb
+$ wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-1.4.1106-amd64.deb
 ```
 
 Install it:
 
 ```bash
-sudo gdebi rstudio-1.4.1106-amd64.deb
+$ sudo gdebi rstudio-1.4.1106-amd64.deb
 ```
 
 To see if it installed correctly, try and open RStudio from the GNOME menu - there's not simple verification from the terminal.
