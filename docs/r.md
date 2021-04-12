@@ -5,7 +5,7 @@ R's use in the data science and marketing analytics community has taken off over
 
 ## Installing R Windows Users
 
-Go to the [R homepage for Windows] and download the most recent installer (`R-4.0.5-win.exe`)
+Go to the [R homepage for Windows](https://cran.r-project.org/bin/windows/base/) and download the most recent installer (`R-4.0.5-win.exe`)
 
 To install, double-click the `exe` you just downloaded and follow the instructions.
 
@@ -13,7 +13,7 @@ To install, double-click the `exe` you just downloaded and follow the instructio
 
 ## Installing R for Mac Users
 
-Go to the [R homepage](https://cran.r-project.org/) and download the installer (`R-4.0.5.pkg`).
+Go to the [R homepage](https://cran.r-project.org/bin/macosx/) and download the installer (`R-4.0.5.pkg`).
 
 To install, double-click the `pkg` and follow the instructions.
 
