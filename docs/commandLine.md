@@ -69,7 +69,7 @@ Homebrew is a package manager for Mac.
 Install Homebrew by opening a terminal and pasting the following command:
 
 ``` bash
-$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 Verify that Homebrew installed correctly, enter the following into your terminal:
