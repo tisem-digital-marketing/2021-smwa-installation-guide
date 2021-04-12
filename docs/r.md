@@ -21,7 +21,7 @@ To install, double-click the `pkg` and follow the instructions.
 
 !!! tip "Why Not Install via Homebrew?"
         There is conflicting views on Homebrew's installation of `R`.
-        Because we haven't tried it to ensure no problems will emerge, we recommend going with the installation based on the CRAN distributed package.
+        Because we haven't tried it & to ensure no problems will emerge, we recommend going with the installation based on the CRAN distributed package.
 
 ## Installing R for Linux
 
