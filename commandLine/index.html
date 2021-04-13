@@ -1,0 +1,726 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-7.1.1">
+    
+    
+      
+        <title>Command Line Tools - Social Media and Web Analytics Installation Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.9299cb39.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ef6f36e2.min.css">
+        
+      
+    
+    
+    
+      
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>:root{--md-text-font-family:"Roboto";--md-code-font-family:"Roboto Mono"}</style>
+      
+    
+    
+    
+    
+      
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="none" data-md-color-accent="none">
+  
+    
+    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#bash-shell" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Social Media and Web Analytics Installation Guide" class="md-header__button md-logo" aria-label="Social Media and Web Analytics Installation Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Social Media and Web Analytics Installation Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Command Line Tools
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Social Media and Web Analytics Installation Guide" class="md-nav__button md-logo" aria-label="Social Media and Web Analytics Installation Guide" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
+
+    </a>
+    Social Media and Web Analytics Installation Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Welcome
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Command Line Tools
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Command Line Tools
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-users" class="md-nav__link">
+    Windows Users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mac-users" class="md-nav__link">
+    Mac Users
+  </a>
+  
+    <nav class="md-nav" aria-label="Mac Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-a-terminal-session" class="md-nav__link">
+    Opening a Terminal Session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-new-tools-for-the-terminal" class="md-nav__link">
+    Installing New Tools for the Terminal
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing New Tools for the Terminal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-x-code-tools" class="md-nav__link">
+    The X-code Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#homebrew-package-manager" class="md-nav__link">
+    Homebrew Package Manager
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-packages-with-homebrew" class="md-nav__link">
+    Installing Packages with Homebrew
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linking-packages-to-a-terminal-session" class="md-nav__link">
+    Linking Packages to a Terminal Session
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-users" class="md-nav__link">
+    Linux Users
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gitInstall/" class="md-nav__link">
+        Git
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r/" class="md-nav__link">
+        R
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rstudio/" class="md-nav__link">
+        RStudio
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../r-packages/" class="md-nav__link">
+        R Packages
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../finish-line/" class="md-nav__link">
+        The Finish Line!
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contact/" class="md-nav__link">
+        Contact Us
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../citation-license/" class="md-nav__link">
+        Citation & License
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../updates/" class="md-nav__link">
+        News & Updates
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../acknowledgement/" class="md-nav__link">
+        Acknowledgements
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#windows-users" class="md-nav__link">
+    Windows Users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mac-users" class="md-nav__link">
+    Mac Users
+  </a>
+  
+    <nav class="md-nav" aria-label="Mac Users">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opening-a-terminal-session" class="md-nav__link">
+    Opening a Terminal Session
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-new-tools-for-the-terminal" class="md-nav__link">
+    Installing New Tools for the Terminal
+  </a>
+  
+    <nav class="md-nav" aria-label="Installing New Tools for the Terminal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-x-code-tools" class="md-nav__link">
+    The X-code Tools
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#homebrew-package-manager" class="md-nav__link">
+    Homebrew Package Manager
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installing-packages-with-homebrew" class="md-nav__link">
+    Installing Packages with Homebrew
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linking-packages-to-a-terminal-session" class="md-nav__link">
+    Linking Packages to a Terminal Session
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linux-users" class="md-nav__link">
+    Linux Users
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="bash-shell">Bash Shell</h1>
+<p>A command-line interface or shell, also known as a terminal, is a means of interacting with a computer program where the user issues commands to the program in the form of successive lines of text.</p>
+<p>We will want to use the <code>Bash</code> shell for this course to interact with our file system and use Git.</p>
+<h2 id="windows-users">Windows Users</h2>
+<p>Windows doesn't have a Bash shell by default, so we are going to install one.
+Follow these steps:</p>
+<ol>
+<li>Download the Git for Windows <a href="https://gitforwindows.org/">installer</a>.</li>
+<li>Run the installer and follow the steps below:<ul>
+<li>Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.</li>
+<li>From the dropdown menu select "Use the Nano editor by default" (NOTE: you will need to scroll up to find it) and click on "Next".</li>
+<li>On the page that says "Adjusting the name of the initial branch in new repositories", ensure that "Let Git decide" is selected. This will ensure the highest level of compatibility for our lessons.</li>
+<li>Ensure that "Git from the command line and also from 3rd-party software" is selected and click on "Next". (If you don't do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the "Git from the command line and also from 3rd-party software" option.)</li>
+<li>Ensure that "Use the native Windows Secure Channel Library" is selected and click on "Next".</li>
+<li>Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".</li>
+<li>Ensure that "Use Windows' default console window" is selected and click on "Next".</li>
+<li>Ensure that "Default (fast-forward or merge) is selected and click "Next"</li>
+<li>Ensure that "Git Credential Manager Core" is selected and click on "Next".</li>
+<li>Ensure that "Enable file system caching" is selected and click on "Next".</li>
+<li>Click on "Install".</li>
+<li>Click on "Finish" or "Next".</li>
+</ul>
+</li>
+<li>If your "HOME" environment variable is not set (or you don't know what this is):<ul>
+<li>Open command prompt (Open Start Menu then type cmd and press Enter)</li>
+<li>Type the following line into the command prompt window exactly as shown:
+  <code>setx HOME "%USERPROFILE%"</code></li>
+<li>Press Enter, you should see SUCCESS: Specified value was saved.</li>
+<li>Quit command prompt by typing exit then pressing Enter</li>
+</ul>
+</li>
+</ol>
+<p>This will provide you with both a Bash (called GitBash) shell <em>and Git</em>.</p>
+<p>To verify you have installed GitBash, click the windows button, and type in 'GitBash'.
+You should see the software appear as a 'choice'.
+Click on it, and a bash terminal should open up.</p>
+<h2 id="mac-users">Mac Users</h2>
+<p>A Bash shell comes already installed with MacOS.</p>
+<p>You will need to install some other software from the terminal throughout the course, so it will be useful to install some additional "command line tools" now.</p>
+<h3 id="opening-a-terminal-session">Opening a Terminal Session</h3>
+<p>To open a terminal session:</p>
+<ul>
+<li>Open spotlight with <code>cmd + space</code></li>
+<li>Type in 'terminal'</li>
+<li>When the terminal appears, open it.</li>
+</ul>
+<h3 id="installing-new-tools-for-the-terminal">Installing New Tools for the Terminal</h3>
+<h4 id="the-x-code-tools">The X-code Tools</h4>
+<p>We want to install 'X-code command line tools'. Copy and paste the following and press <code>Return</code></p>
+<div class="highlight"><pre><span></span><code>$ xcode-select --install
+</code></pre></div>
+<p>If you get a message that the command line tools are already installed, you can continue to the next step.</p>
+<h4 id="homebrew-package-manager">Homebrew Package Manager</h4>
+<p>Homebrew is a package manager for Mac.</p>
+<p>Install Homebrew by opening a terminal and pasting the following command:</p>
+<div class="highlight"><pre><span></span><code>/bin/bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh<span class="k">)</span><span class="s2">&quot;</span>
+</code></pre></div>
+<p>Verify that Homebrew installed correctly, enter the following into your terminal:</p>
+<div class="highlight"><pre><span></span><code>$ brew doctor
+</code></pre></div>
+<p>And you should see the following output:</p>
+<div class="highlight"><pre><span></span><code>Your system is ready to brew
+</code></pre></div>
+<p>Before continuing, lets be sure everything in Homebrew is up to date by entering the following:</p>
+<div class="highlight"><pre><span></span><code>$ brew upgrade
+</code></pre></div>
+<h3 id="installing-packages-with-homebrew">Installing Packages with Homebrew</h3>
+<p>Now we can use homebrew to easily install software.  We need some basic system tools for some of the R packages we will install later.</p>
+<p>In particular we need:</p>
+<ul>
+<li><code>libxml2</code></li>
+<li><code>openssl</code></li>
+<li><code>libgit2</code></li>
+</ul>
+<p>Most of these are already installed, but we need updates of these packages.
+For each of these packages enter:</p>
+<div class="highlight"><pre><span></span><code>$ brew install pkg-name
+</code></pre></div>
+<p>i.e. <code>brew install libxml2</code>.</p>
+<!-- If you get a message that the package you are trying to reinstall is not yet installed, try `brew install pkg-name` instead. -->
+
+<h3 id="linking-packages-to-a-terminal-session">Linking Packages to a Terminal Session</h3>
+<p>We need to ensure that our terminal session has access to what we installed.
+To do this, copy and paste the following into your bash shell:</p>
+<div class="highlight"><pre><span></span><code>$ <span class="nb">echo</span> <span class="s1">&#39;export PATH=&quot;/usr/local/opt/libxml2/bin:$PATH&quot;&#39;</span> &gt;&gt; ~/.bash_profile
+$ <span class="nb">echo</span> <span class="s1">&#39;export PATH=&quot;/usr/local/opt/openssl/bin:$PATH&quot;&#39;</span> &gt;&gt; ~/.bash_profile
+$ <span class="nb">source</span> .bash_profile
+</code></pre></div>
+<p>Note you won't see anything returned to screen after each command.</p>
+<h2 id="linux-users">Linux Users</h2>
+<ul>
+<li>Linux Users: Open a terminal session with <code>Ctrl</code> + <code>Alt</code> + <code>T</code>.</li>
+<li>Windows Users: Open the Ubuntu Terminal as we described <a href="/windows-wsl/#installing-windows-terminal">here</a></li>
+</ul>
+<p>Copy the following command into terminal and press <code>Return</code>:</p>
+<div class="highlight"><pre><span></span><code>$ sudo apt-get update
+$ sudo apt-get install libcurl4-gnutls-dev librtmp-dev
+</code></pre></div>
+<p>After the installation succeeded successfully repeat this one-by-one with the following two other commands:</p>
+<div class="highlight"><pre><span></span><code>$ sudo apt-get install libxml2-dev
+$ sudo apt-get install libssl-dev
+<span class="c1"># below needed to install R</span>
+$ sudo apt install --no-install-recommends software-properties-common dirmngr 
+</code></pre></div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+        
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href=".." class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Welcome
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../gitInstall/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Git
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}, "search": "../assets/javascripts/workers/search.fe42c31b.min.js", "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.7353b375.min.js"></script>
+      
+    
+  </body>
+</html>
