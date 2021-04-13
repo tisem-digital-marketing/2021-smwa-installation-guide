@@ -31,51 +31,47 @@ $ brew link --force git
 
 Then close and reopen the terminal. Now [Verify your installation](#verifying your install)
 
-### Autocompletion
+!!! bug "Git autocomplete for Older Macs (pre-2018)"
 
-When we code we want to be lazy - we don't always want to write out the whole line of code we want to enter, and would prefer the computer to autocomplete our line of code for us.
-The MacOS terminal doesn't have this autocompletion for Git by default, so let's add it using our trusty friend Homebrew.
+    On older generation Macs the terminal doesn't have this autocompletion for Git by default. 
+    Let's add it using our trusty friend Homebrew.
 
-Open a terminal and enter:
+    Open a terminal and enter:
 
-``` bash
-$ brew install bash-completion
-```
+    ``` bash
+    $ brew install bash-completion
+    ```
 
-This installs 'bash completion' into a file `/usr/local/etc/bash_completion.d`.
+    This installs 'bash completion' into a file `/usr/local/etc/bash_completion.d`.
 
-To make the autocompletion work, type the following into your terminal:
+    To make the autocompletion work, type the following into your terminal:
 
-```bash
-$ echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.bash_profile
-```
+    ```bash
+    $ echo "[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion" >> ~/.bash_profile
+    ```
 
-And restart your terminal session:
+    And restart your terminal session:
 
-``` bash
-$ source ~/.bash_profile
-```
+    ``` bash
+    $ source ~/.bash_profile
+    ```
 
-### Checking Autocomplete works
+    Now you can autocomplete by pressing `tab` twice after a command.
+    Enter the following into you terminal and press `tab` twice (which we depict as `[tab] [tab]`) below:
 
-Now you can autocomplete by pressing `tab` twice after a command.
-We will demonstrate this in class.
+    ``` bash
+    $ git [tab] [tab]
+    ```
 
-For now, enter the following into you terminal and press `tab` twice (which we depict as `[tab] [tab]`) below:
+    which will then show the following (we only display the first and last few entries...):
 
-``` bash
-$ git [tab] [tab]
-```
-
-which will then show the following (we only display the first and last few entries...):
-
-```bash
-$ git [tab] [tab]
-add            blame          cherry-pick    ...         
-push           repack         rm             ...
-...
-remote         revert         show-branch    tag
-```
+    ```bash
+    $ git [tab] [tab]
+    add            blame          cherry-pick    ...         
+    push           repack         rm             ...
+    ...
+    remote         revert         show-branch    tag
+    ```
 
 ## Linux Users
 
