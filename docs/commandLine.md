@@ -122,6 +122,8 @@ $ echo 'export PATH="/usr/local/opt/openssl/bin:$PATH"' >> ~/.bash_profile
 $ source .bash_profile
 ```
 
+Note you won't see anything returned to screen after each command.
+
 ## Linux Users
 
 * Linux Users: Open a terminal session with `Ctrl` + `Alt` + `T`.
