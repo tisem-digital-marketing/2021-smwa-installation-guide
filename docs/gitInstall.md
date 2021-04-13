@@ -10,7 +10,7 @@ During the course we will show you how to use [GitHub](https://www.github.com) t
 * Please [register](https://github.com/join) for a [GitHub](https://github.com/) account
 * When choosing a username we recommend not using a name that includes an employer or university in case you move later on
   * i.e. 'johnsmith' or 'johnsmith86' are OK, 'johnsmithTilburg' probably not
-* Apply for the education discount by following [these instructions](gh-edu)
+* Apply for the education discount by following [these instructions][gh-edu]
   * Don't worry, we won't do anything that costs money in this course, the benefit is you get some perks
 
 ## Windows Users
