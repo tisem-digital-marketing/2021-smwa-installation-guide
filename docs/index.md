@@ -11,7 +11,7 @@ These pages should help you to get started setting up the computing environment 
     * If you find any outdated links or unclear descriptions, email us at [tisem.social.media@gmail.com]() so that we can update the instructions or clarify as needed.
     * Where necessary, we have provided instructions for Mac, Windows and Linux machines.
 
-!!! bug "the `$`" sign
+!!! bug "the `$` sign"
 
     In the pages that follow you will often see the following:
 
