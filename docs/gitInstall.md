@@ -108,4 +108,4 @@ git version 2.18.0
 
 Ensure that you have a version greater than `2.15.0` installed.
 
-[gh-edu]: https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/apply-for-an-educator-or-researcher-discount
+[gh-edu]: https://education.github.com/students
