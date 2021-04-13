@@ -104,12 +104,12 @@ Most of these are already installed, but we need updates of these packages.
 For each of these packages enter:
 
 ``` bash
-$ brew reinstall pkg-name
+$ brew install pkg-name
 ```
 
-i.e. `brew reinstall libxml2`.
+i.e. `brew install libxml2`.
 
-If you get a message that the package you are trying to reinstall is not yet installed, try `brew install pkg-name` instead.
+<!-- If you get a message that the package you are trying to reinstall is not yet installed, try `brew install pkg-name` instead. -->
 
 ### Linking Packages to a Terminal Session
 
